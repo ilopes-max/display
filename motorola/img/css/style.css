@@ -1,0 +1,17 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.conteudo-principal{
+    border:2px solid;
+    width: 1180px;
+    height: 650px;
+    margin: 0 auto;
+}
+h3{
+    color: rgb(152, 215, 252);
+}
