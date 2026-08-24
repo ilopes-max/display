@@ -1,0 +1,18 @@
+{
+  "name": "display_tb",
+  "version": "1.0.0",
+  "description": "Estudos dobre HTML e CSS display",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hmtl",
+    "css",
+    "display",
+    "classes"
+  ],
+  "github":"https://github.com/icneto603/display_TB.git",
+  "author": "Ivo",
+  "license": "ISC"
+}
