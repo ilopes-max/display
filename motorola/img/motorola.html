@@ -1,60 +1,208 @@
 <!DOCTYPE html>
+<!-- Indica que este documento utiliza HTML5 -->
+
 <html lang="pt-br">
+<!--
+    Elemento raiz da página.
+    lang="pt-br" informa ao navegador e aos mecanismos de busca
+    que o conteúdo da página está em português do Brasil.
+-->
+
 <head>
+    <!--
+        A tag <head> contém informações sobre a página que não
+        aparecem diretamente como conteúdo visual para o usuário.
+    -->
+
     <meta charset="UTF-8">
+    <!--
+        Define a codificação de caracteres como UTF-8.
+        Isso permite utilizar corretamente caracteres como:
+        ç, ã, é, ô, etc.
+    -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Faz com que a página se adapte à largura da tela do dispositivo.
+        É especialmente importante para páginas responsivas em celulares.
+    -->
+
     <title>Motorola</title>
-      <link rel="stylesheet" href = "css/style.css
-      ">
+    <!--
+        Define o título que aparece na aba do navegador.
+    -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--
+        Importa o arquivo CSS responsável pela aparência da página.
+        
+        href="css/style.css" indica que o arquivo style.css
+        está dentro da pasta "css".
+    -->
+
 </head>
+
 <body>
-    <main class="conteudo-principal">
-        <section class="conteudo-principal__direito">
-            <header>
-                <h1>
-                   A maior bateria<br> em
-                    um ultrafino<sup>2</sup>
-                </h1>
-                
-                <h3>
-                    Silício-carbono
-                </h3>
-                <article class="conteudo-principal__direito--descricao">
-                    <div class="conteudo-principal__direito--horas-bateria">
-                        <h2>
-                            38 horas
-                        </h2>
-                        <p>A <strong>de 4800 mAh com <br>silício-carbono</strong>  oferece até 38<br> horas de autonomia<sup>7</sup> em um<br> design ultrafino.</p>
+    <!--
+        A tag <body> contém todo o conteúdo que será exibido
+        visualmente na página.
+    -->
 
-                    </div>
+    <main class="main-container">
+        <!--
+            <main> representa o conteúdo principal da página.
 
-                </article>
-                <article class="conteudo-principal__direito--carregador">
-                    <div class="conteudo-principal__direito--horas-carregador">
-                        <h2>
-                            15 minutos<sup>6</sup>
-                        </h2>
-                        <p>Com o <strong> carregador <br> TurboPower™ 68</strong>, você <br>garante bateria para o dia <br> todo em apenas 15 minutos⁶.
-                        </p>
+            class="main-container" dá uma identificação para que
+            esse elemento possa ser estilizado no CSS.
+        -->
 
-                    </div>
+        <section class="main-container__left">
+            <!--
+                <section> representa uma seção da página.
 
-                </article>
-                <footer class="conteudo-principal__direito--sem-fio">
-                    <h2>
-                         Carrege sem fio
-                        </h2>
-                        <p>Use carregamento sem fio TurboPower™ de até 15 W<sup>8</sup> para mais <br>praticidade no dia a dia.
-                        </p>
+                Esta é a seção da esquerda, provavelmente usada
+                para apresentar a imagem do celular.
+            -->
 
+            <img src="./celular_carregando.webp" alt="Celular carregando bateria." />
+            <!--
+                <img> exibe uma imagem.
 
-                </footer>
+                src indica o caminho até a imagem.
+                Neste caso, a imagem "celular_carregando.webp"
+                está na mesma pasta do arquivo HTML.
+
+                alt fornece uma descrição da imagem.
+                É importante para acessibilidade e também caso
+                a imagem não consiga ser carregada.
+            -->
+
+        </section>
+
+        <section class="main-container__right">
+            <!--
+                Segunda seção principal da página.
+
+                Esta seção representa o lado direito do conteúdo,
+                onde ficam o título e as informações sobre a bateria.
+            -->
+
+            <header class="main-container__right--title">
+                <!--
+                    <header> representa o cabeçalho desta seção.
+
+                    Aqui ficam o título principal e o subtítulo
+                    relacionados à tecnologia da bateria.
+                -->
+
+                <h1>A maior bateria em um ultrafino<sup>2</sup></h1>
+                <!--
+                    <h1> é o título principal da página/seção.
+
+                    <sup> deixa o número "2" elevado em relação
+                    ao texto. É normalmente utilizado para
+                    referências, notas ou números sobrescritos.
+                -->
+
+                <span class="main-container__right--subtitle">Silício-carbono</span>
+                <!--
+                    <span> é um elemento usado para envolver
+                    pequenos trechos de texto.
+
+                    Aqui ele está sendo usado para representar
+                    o subtítulo "Silício-carbono".
+                -->
 
             </header>
+            
+            <article class="main-container__right--batery">
+                <!--
+                    <article> representa um conteúdo independente
+                    ou uma parte específica de informação.
+
+                    Neste caso, contém as informações relacionadas
+                    à bateria e ao tempo de carregamento.
+                -->
+
+                <div class="main-container__right--time">
+                    <!--
+                        <div> é um container genérico utilizado
+                        para agrupar elementos.
+
+                        Este grupo apresenta a informação sobre
+                        os 15 minutos de carregamento.
+                    -->
+
+                    <h2>15 minutos<sup>6</sup></h2>
+                    <!--
+                        <h2> representa um título de segundo nível.
+
+                        O <sup>6</sup> coloca o número 6 como
+                        sobrescrito.
+                    -->
+
+                    <p>Com o <strong>carregador TurboPower™ 68</strong>, você garante bateria para o dia todo em apenas 15 minutos<sup>6</sup>.</p>
+                    <!--
+                        <p> representa um parágrafo.
+
+                        <strong> coloca o texto em destaque,
+                        normalmente sendo exibido em negrito.
+
+                        Aqui, "carregador TurboPower™ 68" recebe
+                        esse destaque.
+                    -->
+
+                </div>
+
+                <div class="main-container__right--hours">
+                    <!--
+                        Segundo grupo de informações sobre a bateria.
+
+                        Aqui é apresentada a autonomia de 38 horas.
+                    -->
+
+                    <h2>38 horas</h2>
+                    <!--
+                        Título informando a autonomia da bateria.
+                    -->
+
+                    <p>A<strong>bateria de 4800 mAh com silício-carbono</strong> oferece até 38 horas de autonomia<sup>7</sup> em um design ultrafino.</p>
+                    <!--
+                        <p> contém a descrição da autonomia da bateria.
+
+                        <strong> destaca a informação principal
+                        sobre a bateria de 4800 mAh.
+                    -->
+
+                </div>
+            
+            </article>
+            
+            <footer class="main-container__right--charge">
+                <!--
+                    <footer> representa o rodapé de uma seção.
+
+                    Neste caso, contém uma informação adicional
+                    sobre o carregamento sem fio.
+                -->
+
+                <h2>Carregue sem fio</h2>
+                <!--
+                    Título da seção sobre carregamento sem fio.
+                -->
+
+                <p>Use carregamento sem fio TurboPower™ de até 15 W<sup>8</sup> para mais praticidade no dia a dia.</p>
+                <!--
+                    Parágrafo explicando o recurso de carregamento sem fio.
+
+                    O <sup>8</sup> apresenta o número 8 como sobrescrito.
+                -->
+                
+            </footer>
 
         </section>
 
     </main>
-
 </body>
+
 </html>

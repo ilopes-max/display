@@ -1,17 +1,308 @@
-/* reset */
-
+/* 
+    O seletor * seleciona TODOS os elementos da página.
+    Essas propriedades são usadas para criar uma configuração
+    inicial/padrão para os elementos.
+*/
 *{
+    /* Remove as margens padrão dos elementos */
     margin: 0;
-    padding:0;
-    box-sizing:border-box;
+
+    /* Remove os espaçamentos internos padrão dos elementos */
+    padding: 0;
+
+    /* 
+        Faz com que width e height incluam também
+        o padding e a borda do elemento.
+        Isso facilita bastante o controle dos tamanhos.
+    */
+    box-sizing: border-box;
+
+    /* Define a fonte padrão de toda a página */
+    font-family: Helvetica, sans-serif;
 }
 
-.conteudo-principal{
-    border:2px solid;
-    width: 1180px;
-    height: 650px;
-    margin: 0 auto;
+
+/*
+    Container principal da página.
+
+    A classe .main-container está no elemento <main>
+    do HTML.
+*/
+.main-container{
+
+    /* 
+        Define a altura do container como 100% da altura
+        da janela do navegador.
+        
+        "vh" significa "viewport height".
+        100vh = 100% da altura da tela.
+    */
+    height: 100vh;
+
+    /*
+        Ativa o Flexbox.
+
+        Os elementos filhos diretos desse container
+        passam a ser organizados utilizando Flexbox.
+    */
+    display: flex;
+
+    /*
+        Centraliza os elementos horizontalmente.
+    */
+    justify-content: center;
+
+    /*
+        Centraliza os elementos verticalmente.
+    */
+    align-items: center;
+
+    /*
+        Cria um espaço de 15px entre os elementos filhos.
+    */
+    gap: 15px;
 }
-h3{
-    color: rgb(152, 215, 252);
+
+
+/*
+    Seleciona todos os elementos <sup> que estejam
+    dentro de .main-container.
+
+    No HTML, os <sup> são utilizados nos números
+    das referências: 2, 6, 7 e 8.
+*/
+.main-container sup{
+
+    /* Define o tamanho da fonte dos números */
+    font-size: 10px;
+
+    /* Define a cor dos números como azul */
+    color: blue;
+}
+
+
+/*
+    Seleciona a imagem <img> que está dentro
+    da classe .main-container__left.
+*/
+.main-container__left img {
+
+    /* Define a largura da imagem */
+    width: 300px;
+
+    /* Define a altura da imagem */
+    height: 450px; 
+}
+
+
+/*
+    Estiliza a seção da direita.
+
+    No HTML, essa classe está no segundo <section>,
+    onde ficam os textos sobre a bateria.
+*/
+.main-container__right{
+
+    /*
+        Esta propriedade está comentada.
+
+        Como está dentro de um comentário CSS,
+        ela NÃO é aplicada.
+
+        Se removermos os comentários, será criada
+        uma borda vermelha de 2px ao redor do elemento.
+    */
+    /*border: 2px solid red;*/
+
+    /* Define a largura da seção direita */
+    width: 650px;
+
+    /* Define a altura da seção direita */
+    height: 450px;
+}
+
+
+/*
+    Estiliza o cabeçalho da seção direita.
+
+    Essa classe corresponde ao <header> que contém
+    o título "A maior bateria em um ultrafino"
+    e o subtítulo "Silício-carbono".
+*/
+.main-container__right--title{
+
+    /*
+        Borda desativada.
+
+        Como está comentada, não aparece na página.
+    */
+    /*border: 2px solid;*/
+
+    /*
+        Ativa o Flexbox nesse elemento.
+    */
+    display: flex;
+
+    /*
+        Organiza os elementos filhos em uma coluna.
+
+        Ou seja:
+        h1
+        ↓
+        span
+    */
+    flex-direction: column;
+
+    /*
+        Centraliza os elementos verticalmente
+        dentro desse container.
+    */
+    justify-content: center;
+
+    /*
+        Define a altura do cabeçalho como 150px.
+    */
+    height: 150px;
+    
+}
+
+
+/*
+    Estiliza o subtítulo "Silício-carbono".
+*/
+.main-container__right--subtitle{
+
+    /* Define a cor do texto */
+    color: #32c6f7;
+
+    /*
+        Adiciona 5px de espaço acima do subtítulo.
+    */
+    margin-top: 5px;
+}
+
+
+/*
+    Estiliza o container que contém as informações
+    sobre os 15 minutos e as 38 horas.
+*/
+.main-container__right--batery{
+
+    /*
+        Borda azul desativada.
+
+        Serve apenas como auxílio visual durante o
+        desenvolvimento para enxergar os limites
+        desse elemento.
+    */
+    /*border: 2px solid blue;*/
+
+    /* Define a altura do container */
+    height: 150px;
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /*
+        Alinha os elementos verticalmente no centro.
+    */
+    align-items: center;
+
+    /*
+        Cria um espaço de 20px entre os dois blocos:
+        "15 minutos" e "38 horas".
+    */
+    gap: 20px;
+
+}
+
+
+/*
+    Seleciona todos os <h2> que estão dentro
+    de .main-container__right--batery.
+*/
+.main-container__right--batery h2 {
+
+    /*
+        Cria 15px de espaço abaixo dos títulos.
+
+        Isso separa o título do parágrafo que vem depois.
+    */
+    margin-bottom: 15px;
+}
+
+
+/*
+    Estiliza a parte final da seção direita,
+    onde aparece a informação sobre carregamento sem fio.
+*/
+.main-container__right--charge{
+
+    /*
+        Borda verde desativada.
+
+        Se fosse ativada, mostraria uma borda verde
+        ao redor desse elemento.
+    */
+    /*border:2px solid green;*/
+
+    /* Define a altura do elemento */
+    height: 150px;
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /*
+        Organiza os elementos filhos em uma coluna.
+
+        h2
+        ↓
+        p
+    */
+    flex-direction: column;
+
+    /*
+        Centraliza verticalmente o conteúdo.
+    */
+    justify-content: center; 
+
+}
+
+
+/*
+    Aqui temos dois seletores separados por vírgula.
+
+    O primeiro seleciona:
+    .main-container__right--time
+
+    O segundo seleciona:
+    .main-container__right--hours p
+
+    A propriedade abaixo controla o espaçamento
+    entre as linhas do texto.
+*/
+.main-container__right--time, .main-container__right--hours p {
+
+    /*
+        Define a altura de cada linha do texto
+        como 25px.
+    */
+    line-height: 25px;
+}
+
+
+/*
+    Seleciona o <h2> que está dentro de
+    .main-container__right--charge.
+
+    Esse é o título:
+    "Carregue sem fio"
+*/
+.main-container__right--charge h2{
+
+    /*
+        Cria 15px de espaço abaixo do título,
+        separando-o do parágrafo.
+    */
+    margin-bottom: 15px;
 }
