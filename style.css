@@ -6,7 +6,14 @@
     box-sizing: border-box;
    
 }
+/*:root{
+    --bg-body: #4a03a6;
+    --fonte-padrao: Impact, sans-serif;
 
+    --bg-logo #000;
+    --cor-fonte-logo: #fff;
+    --bg-header: #2c2c2c;
+}*/
 html{
 font-family: Verdana, sans-serif;
 }

@@ -1,0 +1,50 @@
+
+:root
+{/* Cores Globais da Interface (Menu Lateral) */
+    --ui-bg-sidebar: #52004b;
+    --ui-border: #52004b;
+    --ui-text-title: #ffffff;
+    --ui-text-link: #a8a8b3;
+    --ui-link-hover-bg: #3b3b45;
+    --ui-link-active-bg: #b100c8;
+    --ui-link-active-text: #ffffff;
+
+
+    /* Paleta do Sistema RGB */
+    --color-rgb-1: rgb(255, 0, 0);
+    --color-rgb-2: rgb(0, 255, 0);
+    --color-rgb-3: rgb(0, 0, 255);
+    --color-rgb-4: rgb(255, 255, 0);
+    --color-rgb-5: rgb(0, 255, 255);
+    --color-rgb-6: rgb(255, 0, 255);
+
+    /* Paleta do Sistema CMYK (Simulado em RGB/Hex) */
+    --color-cmyk-1: #e60000; 
+    --color-cmyk-2: #006b00; 
+    --color-cmyk-3: #0000ae; 
+    --color-cmyk-4: #dfdf05; 
+    --color-cmyk-5: #03e6e6; 
+    --color-cmyk-6: #d900d9; 
+
+   --color-netflix-1: #221F1F;
+   --color-netflix-2: #E50914;
+   --color-netflix-3: #F5F5F1;
+
+   --color-google-1: #4285F4;
+   --color-google-2: #FBBC05;
+   --color-google-3: #34A853;
+   --color-google-4: #EA4335;
+
+   --color-paleta-1:#000000;
+   --color-paleta-2:#2A0048;
+   --color-paleta-3:#560072;
+   --color-paleta-4:#560072;
+   --color-paleta-5:#800080;
+   --color-paleta-6:#A90072;
+   --color-paleta-7:#D50048;
+   --color-paleta-8:#FF1652;
+
+}
+
+   
+
