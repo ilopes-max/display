@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    gap: 15px;
+}
+.main-container__subtitle{
+    margin-top: 5px;
+}
+.main-container__left img{
+    width: 300px;
+    height: 450px;
+}

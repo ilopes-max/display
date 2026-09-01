@@ -69,5 +69,11 @@
 
 }
 .color-section__bar--rgb1{
-    color: var(--color-rgb-1)
+    background-color: var(--color-rgb-1) ;
+    background-color: var(--color-rgb-2) ;
+    background-color: var(--color-rgb-3) ;
+    background-color: var(--color-rgb-4) ;
+    background-color: var(--color-rgb-5) ;
+    background-color: var(--color-rgb-6) ;
+
 }
