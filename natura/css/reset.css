@@ -1,0 +1,13 @@
+/* Reset padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+html{
+    /*ativa a rolagem suave nativa para link âncoras*/
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
