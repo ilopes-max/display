@@ -1,6 +1,7 @@
 /* Importação dos aquivos de estilos*/
 @import url(./reset.css);
 @import url(./design-system.css);
+@import url(./colors-bars.css);
 
 .color-section{
     display: flex;
@@ -67,85 +68,4 @@
     z-index: 10;
     box-shadow: 0 0 30px rgba(51, 50, 50, 0.3);
 
-}
-.color-section__bar--rgb1{
-    background-color: var(--color-rgb-1) ;
-}
-.color-section__bar--rgb2{
-    background-color: var(--color-rgb-2) ;
-}
-.color-section__bar--rgb3{
-    background-color: var(--color-rgb-3) ;
-}
-.color-section__bar--rgb4{
-    background-color: var(--color-rgb-4) ;
-}
-.color-section__bar--rgb5{
-    background-color: var(--color-rgb-5) ;
-}
-.color-section__bar--rgb6{
-    background-color: var(--color-rgb-6) ;
-}
-.color-section__bar--cmyk1{
-    background-color: var(--color-cmyk-1) ;
-}
-.color-section__bar--cmyk2{
-    background-color: var(--color-cmyk-2) ;
-}
-.color-section__bar--cmyk3{
-    background-color: var(--color-cmyk-3) ;
-}
-.color-section__bar--cmyk4{
-    background-color: var(--color-cmyk-4) ;
-}
-.color-section__bar--cmyk5{
-    background-color: var(--color-cmyk-5) ;
-}
-.color-section__bar--cmyk6{
-    background-color: var(--color-cmyk-6) ;
-}
-.color-section__bar--netflix1{
-    background-color: var(--color-netflix-1) ;
-}
-.color-section__bar--netflix2{
-    background-color: var(--color-netflix-2) ;
-}
-.color-section__bar--netflix3{
-    background-color: var(--color-netflix-3) ;
-}
-.color-section__bar--google1{
-    background-color: var(--color-google-1) ;
-}
-.color-section__bar--google2{
-    background-color: var(--color-google-2) ;
-}
-.color-section__bar--google3{
-    background-color: var(--color-google-3) ;
-}
-.color-section__bar--google4{
-    background-color: var(--color-google-4) ;
-}
-.color-section__bar--paleta1{
-    background-color: var(--color-paleta-1) ;
-}
-.color-section__bar--paleta2{
-    background-color: var(--color-paleta-2) ;
-}
-.color-section__bar--paleta3{
-    background-color: var(--color-paleta-3) ;
-}
-.color-section__bar--paleta4{
-    background-color: var(--color-paleta-4) ;
-}
-.color-section__bar--paleta5{
-    background-color: var(--color-paleta-5) ;
-}
-.color-section__bar--paleta6{
-    background-color: var(--color-paleta-6) ;
-}
-.color-section__bar--paleta7{
-    background-color: var(--color-paleta-7) ;
-}
-.color-section__bar--paleta8{
-    background-color: var(--color-paleta-8) ;
 }

@@ -111,6 +111,35 @@ font-family: Verdana, sans-serif;
     line-height: 30px;
     
 }
+.faq{
+    border: 2px solid;
+    width: 50%;
+    margin-left: 25px;
+    
+}
+.faq details{
+    background-color: #2c2c2c;
+    color: #fff;
+    line-height: 40px;
+    padding: 10px 20px ;
+
+}
+.faq summary{
+    background: #42c3d5;
+    border-radius: 12px;
+    list-style: none;
+    padding-left: 15px;
+
+}
+.faq summary:hover{
+    cursor: pointer;
+    
+}
+.faq p{
+    color: blueviolet;
+    line-height: 25px;
+
+}
 
 
 
