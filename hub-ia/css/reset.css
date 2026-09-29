@@ -9,5 +9,26 @@
 html{
     /*ativa a rolagem suave nativa para link âncoras*/
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    font-family: var(--font-main);
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+}
+body{
+    padding-top: var(--header-height);
+    padding-bottom: var(--footer-height);
+    line-height: 1.6;
+}
+ul,ol{
+    list-style: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+mark{
+    background-color: var(--color-highlight);
+    padding: 2px 6px;
+    border-radius: 4px;
 }
