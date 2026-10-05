@@ -48,4 +48,12 @@
     background-color: transparent;
     transition: color 0.3 ease, background-color 0.3 ease, transform 0.2 ease;
 }
+.nav__link:hover,
+.nav__link:focus{
+    background-color: var(--color-primary);
+    color: var(--color-nav-link-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba( 2, 132, 199, 0.3);
+}
+
 
