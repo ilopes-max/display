@@ -22,4 +22,30 @@
     display: flex;
     align-items: center;
 }
+.header__title{
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+.nav__list{
+    display: flex;
+    gap: 8px;
+    background-color: var(--color-nav-list-bg);
+    padding: 6px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+.nav__item{
+    display: flex;
+}
+.nav__link{
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+    position: relative;
+    background-color: transparent;
+    transition: color 0.3 ease, background-color 0.3 ease, transform 0.2 ease;
+}
 
