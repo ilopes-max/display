@@ -1,34 +1,43 @@
-/* Reset padrão */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    /*ativa a rolagem suave nativa para link âncoras*/
-    scroll-behavior: smooth;
-    font-family: var(--font-main);
-    background-color: var(--color-bg-body);
-    color: var(--color-text-main);
+
+html {
+  /* define que 1rem = 10px (preservando acessibilidade) */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: var(--font-main);
+  background-color: var(--color-bg-body);
+  color: var(--color-text-main);
 }
-body{
-    padding-top: var(--header-height);
-    padding-bottom: var(--footer-height);
-    line-height: 1.6;
+
+body {
+  /* garante o texto base do documento em 16px (1.6rem) */
+  font-size: var(--font-size-base);
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
+  line-height: 1.6;
 }
-ul,ol{
-    list-style: none;
-    color: inherit;
+
+ul, ol {
+  list-style: none;
 }
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
-mark{
-    background-color: var(--color-highlight);
-    padding: 2px 6px;
-    border-radius: 4px;
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+mark {
+  background-color: var(--color-highlight);
+  padding: 2px 6px;
+  border-radius: 4px;
 }
